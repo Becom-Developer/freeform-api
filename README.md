@@ -12,6 +12,8 @@ app サーバー起動の場合
 perl -I ./local/lib/perl5 ./local/bin/morbo -l "http://*:3050" ./script/freeform.cgi
 ```
 
+暫定的に公開環境 - <https://becom2022.sakura.ne.jp/freeform-api/script/freeform.cgi>
+
 ## Memo
 
 ### Environment
