@@ -2,9 +2,21 @@
 
 入力フォームからメール配信までのアプリケーションロジック
 
+## Work
+
+ローカル開発時の起動方法など
+
+app サーバー起動の場合
+
+```zsh
+perl -I ./local/lib/perl5 ./local/bin/morbo -l "http://*:3050" ./script/freeform.cgi
+```
+
 ## Memo
 
 ### Environment
+
+アプリケーションの全体像メモ - <https://docs.google.com/presentation/d/1dbeq_OUtOLlIBz8AsuaMdNOD0JPZGN0dP75L4ZhFiWk/edit?usp=sharing>
 
 初動時の環境構築に関するメモ
 
