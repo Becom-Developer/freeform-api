@@ -1,0 +1,21 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use utf8;
+use FindBin;
+use lib ( "$FindBin::RealBin/../lib", "$FindBin::RealBin/../local/lib/perl5" );
+use Email::Sender::Simple qw(sendmail);
+use Email::MIME;
+
+my $email = Email::MIME->create(
+    header => [
+        From    => 'postmaster@becom2022.sakura.ne.jp',    # 送信元
+        To      => 'yosizuka1@gmail.com',    # 送信先
+        Subject => 'title',                  # 件名
+    ],
+    body => "You've been a good boy this year. No coal for you.",    # 本文
+);
+
+sendmail($email);
+
+print "test------!!\n";
